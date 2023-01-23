@@ -1,0 +1,1 @@
+Get-ChildItem -path C:\windows -recurse | ForEach-Object {.\yara64.exe .\rules-final.yar $_.Fullname -C}

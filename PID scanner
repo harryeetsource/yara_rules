@@ -1,0 +1,1 @@
+Get-Process | Select -expand id | ForEach-Object {.\yara64.exe .\rules-final.yar -C $_} | Out-File -filepath

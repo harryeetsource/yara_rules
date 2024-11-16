@@ -1,4 +1,4 @@
-rule CustomAssemblyPattern
+rule EmotetIcedIDShellcode
 {
     meta:
         description = "Comprehensive detection of specific custom assembly instructions based on provided disassembly, including Emotet evasion and anti-debugging routines"

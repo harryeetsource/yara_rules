@@ -58,5 +58,5 @@ rule EmotetIcedIDShellcode
         // More strings matching various unique or sequential instructions with potential dynamic values, including anti-debugging and evasion
 
     condition:
-        all of them
+        all of them and not (pe.exports("explorer.exe") or pe.exports("ntoskrnl.exe"))
 }
